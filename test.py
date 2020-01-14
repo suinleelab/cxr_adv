@@ -56,7 +56,7 @@ def test_adversarial(chkpt_pth):
   
 
 def main():
-	parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument('model_path', action="store")
     parser.add_argument('training', action="store", default='Standard')
     
