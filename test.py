@@ -64,7 +64,7 @@ def main():
     
     if args.training == 'Standard':
         test_standard(args.model_path)
-    elif args.training == 'Adversarial'
+    elif args.training == 'Adversarial':
         test_adversarial(args.model_path)
     else:
         print('Training argument must be either "Standard" or "Adversarial"')
