@@ -7,7 +7,7 @@ Before using this repository, be sure to set up a `./data` directory containing 
 
 ### Training a model | Command line interface
 
-To train a model, run `python train.py dataset training` from the command line. The argument ``dataset'' specificies which dataset to use for training, and can be either 'MIMIC' or 'CheXpert'. The argument ``training'' indicates whether to follow the standard training procedure or to train the adversarial view-invariant model. This argument can be either 'Standard' or 'Adversarial'. So, for example, to train the adversarial model on the CheXpert dataset, run `python train.py CheXpert Adversarial`.
+To train a model, run `python train.py dataset training` from the command line. The argument 'dataset' specificies which dataset to use for training, and can be either 'MIMIC' or 'CheXpert'. The argument ``training'' indicates whether to follow the standard training procedure or to train the adversarial view-invariant model. This argument can be either 'Standard' or 'Adversarial'. So, for example, to train the adversarial model on the CheXpert dataset, run `python train.py CheXpert Adversarial`.
 
 ### Testing a model | Command line interface
 
