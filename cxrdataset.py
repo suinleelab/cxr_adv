@@ -144,10 +144,10 @@ class CheXpertDataset(CXRDataset):
             if not include_lateral:
                 self.df = self.df[self.df['Frontal/Lateral'] == 'Frontal']
             
-			train, val = grouped_split(
-				self.df,
-				random_state=random_state,
-				test_size=0.05)
+            train, val = grouped_split(
+                self.df,
+                random_state=random_state,
+                test_size=0.05)
             if fold == 'train':
                 self.df = train
             else:
@@ -164,19 +164,19 @@ class CheXpertDataset(CXRDataset):
             raise ValueError("Invalid fold: {:s}".format(str(fold)))
             
         self.labels = [
-			'Enlarged Cardiomediastinum',
-			'Cardiomegaly',
-			'Lung Opacity',
-			'Lung Lesion',
-			'Edema',
-			'Consolidation',
-			'Pneumonia',
-			'Atelectasis',
-			'Pneumothorax',
-			'Pleural Effusion',
-			'Pleural Other',
-			'Fracture',
-			'Support Devices']
+            'Enlarged Cardiomediastinum',
+            'Cardiomegaly',
+            'Lung Opacity',
+            'Lung Lesion',
+            'Edema',
+            'Consolidation',
+            'Pneumonia',
+            'Atelectasis',
+            'Pneumothorax',
+            'Pleural Effusion',
+            'Pleural Other',
+            'Fracture',
+            'Support Devices']
     
     def __getitem__(self, idx):
 
@@ -258,16 +258,16 @@ class MIMICDataset(CXRDataset):
             raise ValueError("Invalid fold: {:s}".format(str(fold)))
 
         self.labels = [
-			'Enlarged Cardiomediastinum',
-			'Cardiomegaly',
-			'Lung Opacity',
-			'Lung Lesion',
-			'Edema',
-			'Consolidation',
-			'Pneumonia',
-			'Atelectasis',
-			'Pneumothorax',
-			'Pleural Effusion',
-			'Pleural Other',
-			'Fracture',
-			'Support Devices']
+            'Enlarged Cardiomediastinum',
+            'Cardiomegaly',
+            'Lung Opacity',
+            'Lung Lesion',
+            'Edema',
+            'Consolidation',
+            'Pneumonia',
+            'Atelectasis',
+            'Pneumothorax',
+            'Pleural Effusion',
+            'Pleural Other',
+            'Fracture',
+            'Support Devices']
